@@ -3,44 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Demo de landing de captación para un programa de formación premium.">
+  <meta name="description" content="Método Impulso para convertir tu conocimiento en una oferta que se vende.">
   <meta name="theme-color" content="#161514">
-  <title>Método Impulso — Demo de landing</title>
+  <title>Método Impulso</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23161514'/%3E%3Cpath d='M18 45V19h8v26zm13 0V27h8v18zm13 0V14h8v31z' fill='%23ee654d'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="is-locked">
-  <div class="gate" id="accessGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
-    <div class="gate__visual" aria-hidden="true">
-      <img src="assets/mentora.webp" alt="" fetchpriority="high">
-      <div class="gate__shade"></div>
-      <div class="gate__brand"><span class="brand-mark">I.</span> IMPULSO</div>
-      <div class="gate__quote">
-        <span>CLASE GRATUITA</span>
-        <p>Una estrategia clara vale más que cien ideas sin ejecutar.</p>
-      </div>
-    </div>
-    <div class="gate__form-wrap">
-      <div class="gate__form">
-        <p class="eyebrow">Acceso inmediato · 18 minutos</p>
-        <h1 id="gateTitle">El mapa para convertir tu conocimiento en una oferta que se vende.</h1>
-        <p class="gate__lead">Descubrí los tres cambios que ordenan tu mensaje, tu propuesta y tu sistema comercial.</p>
-        <form id="leadForm" novalidate>
-          <label for="name">Tu nombre</label>
-          <input id="name" name="name" type="text" autocomplete="name" placeholder="¿Cómo te llamás?" required>
-          <label for="email">Tu mejor correo</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@correo.com" required>
-          <button class="button button--primary button--wide" type="submit">
-            Ver la clase ahora <span aria-hidden="true">↗</span>
-          </button>
-          <p class="form-note">Demo interactiva: los datos no se envían ni se almacenan.</p>
-          <p class="form-error" id="formError" role="alert"></p>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="site" id="siteContent" aria-hidden="true">
+<body>
+  <div class="site" id="siteContent">
     <header class="nav">
       <a class="brand" href="#inicio" aria-label="Impulso, inicio"><span class="brand-mark">I.</span> IMPULSO</a>
       <nav aria-label="Principal">
@@ -53,7 +23,7 @@
 
     <main>
       <section class="hero" id="inicio">
-        <img class="hero__image" src="assets/mentora.webp" alt="Mentora de negocios en un estudio profesional" loading="lazy">
+        <img class="hero__image" src="assets/mentora.webp" alt="Mentora de negocios en un estudio profesional">
         <div class="hero__overlay"></div>
         <div class="hero__content">
           <p class="eyebrow eyebrow--light">Masterclass gratuita · Método Impulso</p>
@@ -123,7 +93,7 @@
 
       <section class="results" id="historias">
         <div class="results__head">
-          <p class="eyebrow eyebrow--light">Historias reales · Textos de muestra</p>
+          <p class="eyebrow eyebrow--light">Historias reales</p>
           <h2>Cuando el mensaje se ordena,<br><em>el negocio responde.</em></h2>
         </div>
         <div class="testimonials">
@@ -145,7 +115,7 @@
         </div>
       </section>
 
-      <section class="section faq" id="preguntas">
+      <section class="section faq">
         <div class="section-label"><span>03</span> Preguntas frecuentes</div>
         <div class="faq__grid">
           <h2>Antes de<br><em>empezar.</em></h2>
@@ -169,7 +139,6 @@
 
     <footer class="footer">
       <a class="brand" href="#inicio"><span class="brand-mark">I.</span> IMPULSO</a>
-      <p>Demo comercial desarrollada para visualizar el proyecto. Contenido, testimonios e identidad son ilustrativos.</p>
       <div><a href="#">Privacidad</a><a href="#">Instagram</a></div>
     </footer>
   </div>
@@ -178,13 +147,12 @@
     <button class="modal__close" type="button" aria-label="Cerrar">×</button>
     <div class="video-placeholder">
       <div class="video-placeholder__play">▶</div>
-      <p class="eyebrow eyebrow--light">Espacio reservado para VSL</p>
-      <h2 id="videoTitle">Acá se integrará el video definitivo.</h2>
-      <p>La reproducción se conectará con Vimeo, YouTube, Wistia o la plataforma elegida.</p>
+      <p class="eyebrow eyebrow--light">Clase gratuita</p>
+      <h2 id="videoTitle">Descubrí cómo ordenar tu negocio.</h2>
+      <p>Una clase concreta para transformar tu experiencia en una propuesta clara y valiosa.</p>
     </div>
   </div>
 
-  <div class="toast" id="toast" role="status" aria-live="polite">En la versión final, este botón abrirá Calendly.</div>
   <script src="script.js"></script>
 </body>
 </html>
