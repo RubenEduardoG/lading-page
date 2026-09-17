@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo de landing de captación para un programa de formación premium.">
+  <meta name="theme-color" content="#161514">
+  <title>Método Impulso — Demo de landing</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23161514'/%3E%3Cpath d='M18 45V19h8v26zm13 0V27h8v18zm13 0V14h8v31z' fill='%23ee654d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-locked">
+  <div class="gate" id="accessGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate__visual" aria-hidden="true">
+      <img src="assets/mentora.webp" alt="" fetchpriority="high">
+      <div class="gate__shade"></div>
+      <div class="gate__brand"><span class="brand-mark">I.</span> IMPULSO</div>
+      <div class="gate__quote">
+        <span>CLASE GRATUITA</span>
+        <p>Una estrategia clara vale más que cien ideas sin ejecutar.</p>
+      </div>
+    </div>
+    <div class="gate__form-wrap">
+      <div class="gate__form">
+        <p class="eyebrow">Acceso inmediato · 18 minutos</p>
+        <h1 id="gateTitle">El mapa para convertir tu conocimiento en una oferta que se vende.</h1>
+        <p class="gate__lead">Descubrí los tres cambios que ordenan tu mensaje, tu propuesta y tu sistema comercial.</p>
+        <form id="leadForm" novalidate>
+          <label for="name">Tu nombre</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="¿Cómo te llamás?" required>
+          <label for="email">Tu mejor correo</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@correo.com" required>
+          <button class="button button--primary button--wide" type="submit">
+            Ver la clase ahora <span aria-hidden="true">↗</span>
+          </button>
+          <p class="form-note">Demo interactiva: los datos no se envían ni se almacenan.</p>
+          <p class="form-error" id="formError" role="alert"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="site" id="siteContent" aria-hidden="true">
+    <header class="nav">
+      <a class="brand" href="#inicio" aria-label="Impulso, inicio"><span class="brand-mark">I.</span> IMPULSO</a>
+      <nav aria-label="Principal">
+        <a href="#metodo">El método</a>
+        <a href="#programa">Programa</a>
+        <a href="#historias">Historias</a>
+      </nav>
+      <a class="button button--small" href="#agenda">Quiero avanzar <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img class="hero__image" src="assets/mentora.webp" alt="Mentora de negocios en un estudio profesional">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--light">Masterclass gratuita · Método Impulso</p>
+          <h2>Tu experiencia puede ser<br><em>tu mejor negocio.</em></h2>
+          <p>Una clase concreta para transformar lo que sabés en una propuesta clara, valiosa y lista para crecer.</p>
+          <button class="play-button" id="playVideo" type="button" aria-label="Reproducir clase de muestra">
+            <span class="play-button__icon" aria-hidden="true">▶</span>
+            <span><strong>Ver clase gratuita</strong><small>18:24 minutos</small></span>
+          </button>
+        </div>
+        <div class="hero__scroll">Deslizá para descubrir <span aria-hidden="true">↓</span></div>
+      </section>
+
+      <div class="marquee" aria-label="Conceptos principales">
+        <div class="marquee__track">
+          <span>CLARIDAD</span><i>✦</i><span>POSICIONAMIENTO</span><i>✦</i><span>CONVERSIÓN</span><i>✦</i><span>SISTEMA</span><i>✦</i>
+          <span>CLARIDAD</span><i>✦</i><span>POSICIONAMIENTO</span><i>✦</i><span>CONVERSIÓN</span><i>✦</i><span>SISTEMA</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="section problem" id="metodo">
+        <div class="section-label"><span>01</span> El punto de partida</div>
+        <div class="problem__grid">
+          <h2>No necesitás saber más.<br>Necesitás <em>ordenar mejor</em> lo que ya sabés.</h2>
+          <div class="problem__copy">
+            <p>Cuando tu propuesta intenta hablarle a todos, nadie siente que fue creada para sí. Y cuando el mensaje no es claro, vender se convierte en perseguir.</p>
+            <p>Impulso te ayuda a elegir, ordenar y comunicar con intención para que cada pieza de tu negocio trabaje en la misma dirección.</p>
+          </div>
+        </div>
+        <div class="pillars">
+          <article><span>01</span><h3>Una persona</h3><p>Definí a quién ayudás y qué cambio concreto está buscando.</p></article>
+          <article><span>02</span><h3>Una promesa</h3><p>Convertí tu experiencia en una oferta simple de entender y desear.</p></article>
+          <article><span>03</span><h3>Un sistema</h3><p>Construí un recorrido repetible, medible y humano para vender.</p></article>
+        </div>
+      </section>
+
+      <section class="manifesto">
+        <p>DE LA CONFUSIÓN</p>
+        <h2>A UNA MARCA QUE<br><span>SABE QUÉ DECIR.</span></h2>
+      </section>
+
+      <section class="section program" id="programa">
+        <div class="section-label"><span>02</span> El recorrido</div>
+        <div class="program__intro">
+          <h2>Cuatro etapas.<br><em>Una dirección.</em></h2>
+          <p>Un programa de implementación pensado para avanzar con foco, tomar decisiones y terminar con un sistema comercial real.</p>
+        </div>
+        <div class="modules">
+          <article class="module module--active">
+            <button type="button" aria-expanded="true"><span>01</span><strong>Posicionamiento esencial</strong><i>−</i></button>
+            <div class="module__body"><p>Elegí tu territorio, entendé a tu cliente ideal y encontrá la idea central que vuelve reconocible tu marca.</p><ul><li>Nicho y oportunidad</li><li>Cliente y transformación</li><li>Mensaje central</li></ul></div>
+          </article>
+          <article class="module">
+            <button type="button" aria-expanded="false"><span>02</span><strong>Oferta irresistible</strong><i>+</i></button>
+            <div class="module__body"><p>Diseñá una propuesta fácil de explicar, con alcance, valor y condiciones claras.</p><ul><li>Arquitectura de oferta</li><li>Precio y valor percibido</li><li>Objeciones y garantías</li></ul></div>
+          </article>
+          <article class="module">
+            <button type="button" aria-expanded="false"><span>03</span><strong>Mensaje que conecta</strong><i>+</i></button>
+            <div class="module__body"><p>Convertí tu estrategia en una narrativa que atraiga a las personas correctas.</p><ul><li>Historia de marca</li><li>Pilares de contenido</li><li>Copy de conversión</li></ul></div>
+          </article>
+          <article class="module">
+            <button type="button" aria-expanded="false"><span>04</span><strong>Sistema de ventas</strong><i>+</i></button>
+            <div class="module__body"><p>Armá un recorrido simple para captar, conversar y convertir sin improvisar.</p><ul><li>Embudo mínimo viable</li><li>Seguimiento</li><li>Métricas y mejora</li></ul></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="results" id="historias">
+        <div class="results__head">
+          <p class="eyebrow eyebrow--light">Historias reales · Textos de muestra</p>
+          <h2>Cuando el mensaje se ordena,<br><em>el negocio responde.</em></h2>
+        </div>
+        <div class="testimonials">
+          <article>
+            <div class="quote">“</div>
+            <p>Pasé de explicar mi servicio durante veinte minutos a comunicarlo en una frase. Cerré mis primeros tres clientes premium en seis semanas.</p>
+            <footer><span>MC</span><div><strong>María C.</strong><small>Consultora de equipos</small></div></footer>
+          </article>
+          <article>
+            <div class="quote">“</div>
+            <p>Dejé de publicar sin dirección. Ahora cada contenido tiene un propósito y las consultas llegan mucho más preparadas.</p>
+            <footer><span>LA</span><div><strong>Lucía A.</strong><small>Mentora de bienestar</small></div></footer>
+          </article>
+          <article>
+            <div class="quote">“</div>
+            <p>El programa me dio algo que no había encontrado en otros cursos: decisiones concretas y una hoja de ruta que sí pude ejecutar.</p>
+            <footer><span>VR</span><div><strong>Valentina R.</strong><small>Estudio creativo</small></div></footer>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="section-label"><span>03</span> Preguntas frecuentes</div>
+        <div class="faq__grid">
+          <h2>Antes de<br><em>empezar.</em></h2>
+          <div class="faq__items">
+            <details><summary>¿Necesito tener un negocio en marcha?<span>+</span></summary><p>No. La metodología sirve tanto para ordenar un negocio existente como para validar una nueva propuesta profesional.</p></details>
+            <details><summary>¿Cuánto tiempo requiere por semana?<span>+</span></summary><p>El recorrido está pensado para avanzar con entre tres y cinco horas semanales, combinando contenido y aplicación.</p></details>
+            <details><summary>¿Las sesiones quedan grabadas?<span>+</span></summary><p>Sí. Las clases y sesiones grupales quedan disponibles dentro del espacio del programa durante el período indicado.</p></details>
+            <details><summary>¿Puedo pagar en cuotas?<span>+</span></summary><p>La propuesta final puede integrar pago único y planes de cuotas según el país y la plataforma elegida.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="agenda">
+        <p class="eyebrow eyebrow--light">Tu próximo movimiento puede ser simple</p>
+        <h2>Hablemos de la versión<br><em>más clara de tu negocio.</em></h2>
+        <p>Agendá una conversación breve para revisar dónde estás, qué te está frenando y cuál podría ser tu próximo paso.</p>
+        <button class="button button--primary button--large" id="scheduleButton" type="button">Agendar mi sesión <span aria-hidden="true">↗</span></button>
+        <small>Sin compromiso · 30 minutos · Cupos limitados</small>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#inicio"><span class="brand-mark">I.</span> IMPULSO</a>
+      <p>Demo comercial desarrollada para visualizar el proyecto. Contenido, testimonios e identidad son ilustrativos.</p>
+      <div><a href="#">Privacidad</a><a href="#">Instagram</a></div>
+    </footer>
+  </div>
+
+  <div class="modal" id="videoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="videoTitle">
+    <button class="modal__close" type="button" aria-label="Cerrar">×</button>
+    <div class="video-placeholder">
+      <div class="video-placeholder__play">▶</div>
+      <p class="eyebrow eyebrow--light">Espacio reservado para VSL</p>
+      <h2 id="videoTitle">Acá se integrará el video definitivo.</h2>
+      <p>La reproducción se conectará con Vimeo, YouTube, Wistia o la plataforma elegida.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">En la versión final, este botón abrirá Calendly.</div>
+  <script src="script.js"></script>
+</body>
+</html>
